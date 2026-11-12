@@ -1,3 +1,5 @@
 node_modules/
-.studio/
 .DS_Store
+.studio/qa/
+.studio/research/**/*.jpg
+.studio/research/**/*.png

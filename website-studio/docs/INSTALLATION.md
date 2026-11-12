@@ -8,7 +8,7 @@ The cloud session that built this is ephemeral. It lives at https://github.com/j
 ## 1. Skills (one command)
 
 ```bash
-git clone https://github.com/jaredrafalesgan/Portfolio website-studio && cd website-studio
+git clone https://github.com/jaredrafalesgan/Portfolio && cd Portfolio/website-studio
 ```
 ```bash
 ./install.sh

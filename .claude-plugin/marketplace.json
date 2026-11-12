@@ -4,7 +4,7 @@
   "plugins": [
     {
       "name": "website-studio",
-      "source": "./",
+      "source": "./website-studio",
       "description": "Agency-grade website design and development system (10 skills + QA scripts)."
     }
   ]

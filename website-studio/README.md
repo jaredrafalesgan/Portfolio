@@ -48,7 +48,7 @@ node skills/website-research/scripts/capture-reference.mjs https://site-a.com ht
 
 ## Install from this repo
 ```bash
-git clone https://github.com/jaredrafalesgan/Portfolio website-studio && cd website-studio && ./install.sh
+git clone https://github.com/jaredrafalesgan/Portfolio && cd Portfolio/website-studio && ./install.sh
 ```
 Or as a Claude Code plugin: `/plugin marketplace add jaredrafalesgan/Portfolio` then `/plugin install website-studio@website-studio`.
 
