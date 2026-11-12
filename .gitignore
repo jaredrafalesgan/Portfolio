@@ -4,3 +4,4 @@ node_modules/
 .studio/research/**/*.jpg
 .studio/research/**/*.png
 .studio/source-images/
+dist/
