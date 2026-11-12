@@ -19,8 +19,8 @@ Ratio: ground ~85% · ink ~12% · signal ≤3%.
 
 ## Typography
 - Display: **Schibsted Grotesk** (variable 400–900): editorial-technical, compact, distinctive capitals.
-- Text: **Geist** (variable): clear at small sizes on dark.
-- System output only (workflow nodes, run log): **Geist Mono**.
+- Text: **Schibsted Grotesk** as well (one family; contrast comes from size and weight). Geist was dropped after Impeccable flagged it as overused and because two similar sans broke the pairing rule.
+- System output only (workflow nodes, run log): **IBM Plex Mono** 400/500.
 - Scale ~1.333, fluid. Display tracking −0.035em. Body 17–18px, measure ≤ 66ch.
 
 ## Space & grid

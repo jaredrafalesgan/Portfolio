@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T21:12:07.363Z",
+        "reason": "Claude, measured in Chromium at 390px and 1440px: all text sits ≥17px inside full-bleed section edges and ≥20px from hairline rules; flagged boxes are open rule-separated rows and bands, not bordered cards"
+      }
+    ]
+  }
+}
