@@ -46,11 +46,11 @@ node skills/performance-seo/scripts/seo-check.mjs https://preview-url.vercel.app
 node skills/website-research/scripts/capture-reference.mjs https://site-a.com https://site-b.com --out .studio/research
 ```
 
-## Persisting
-This was generated in an ephemeral cloud container. Push it to your own GitHub repo:
+## Install from this repo
 ```bash
-gh repo create website-studio --private --source . --push
+git clone https://github.com/jaredrafalesgan/Portfolio website-studio && cd website-studio && ./install.sh
 ```
+Or as a Claude Code plugin: `/plugin marketplace add jaredrafalesgan/Portfolio` then `/plugin install website-studio@website-studio`.
 
 ## Credits
 Builds on and routes to: Anthropic `frontend-design` and `webapp-testing`, Paul Bakaus's Impeccable, Emil Kowalski's skills, Vercel agent-skills, and GreenSock's official GSAP skills. Those are installed from their own repos under their own licenses (Apache-2.0 / MIT) and are not redistributed here.

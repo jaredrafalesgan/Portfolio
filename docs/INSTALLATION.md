@@ -3,12 +3,12 @@
 Everything here is free unless marked 💳. Nothing here deploys anything publicly.
 
 ## 0. Keep this system somewhere permanent
-The cloud session that built this is ephemeral. Push this folder to a GitHub repo you own (see README, "Persisting"). After that, every step below works on any machine.
+The cloud session that built this is ephemeral. It lives at https://github.com/jaredrafalesgan/Portfolio. After that, every step below works on any machine.
 
 ## 1. Skills (one command)
 
 ```bash
-git clone https://github.com/<you>/website-studio && cd website-studio
+git clone https://github.com/jaredrafalesgan/Portfolio website-studio && cd website-studio
 ```
 ```bash
 ./install.sh
@@ -17,7 +17,7 @@ This installs the 10 website-studio skills plus 16 curated official skills into 
 
 **Alternative: install as a Claude Code plugin** (stays updatable):
 ```
-/plugin marketplace add <you>/website-studio
+/plugin marketplace add jaredrafalesgan/Portfolio
 /plugin install website-studio@website-studio
 ```
 
