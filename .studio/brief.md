@@ -59,9 +59,25 @@ No fabricated results, testimonials, logos or screenshots. Where a result isn't 
 ## Subject's world (raw material for identity)
 Workflow canvas, trigger nodes, "Wait 1 day" steps, if/else branches, tags, pipeline stages, opportunity cards, calendar slots, SMS bubbles, reminder timestamps, execution logs, IVR menus ("Press 1 for service"), webhooks, contact records, smart lists.
 
+## From résumé (received 12 Nov 2026)
+- **Name: Jared Gan** (résumé, Framer account and old site agree). Email: jaredrafalesgan@gmail.com · LinkedIn: linkedin.com/in/jared-gan. Phone is on the résumé but **not published** unless he asks.
+- Headline: "GoHighLevel Specialist — Business Systems Builder and Automation Expert".
+- Experience:
+  - GoHighLevel Specialist, The Business Catalyst — Mar 2026–present. 15+ email/SMS workflows and customer journeys; GHL website + webinar registration system with forms, smart communication and automated workflows.
+  - Technology Specialist, The Church of Jesus Christ of Latter-day Saints — Jun 2025–Mar 2026. Reports and trackers in Excel/Google Sheets; technical support for 160+ users by phone and in person.
+  - Assistant Executive Secretary, same organisation — Jan 2023–Mar 2024. Canva presentations, posters and event materials for 10+ events/meetings a month; email, calendar and scheduling in Google Workspace, coordinating 10–15 weekly meetings.
+- Education: Arellano University, Senior High School 2021–2023 — research project on salt battery technology, Top #1 Research Awardee.
+- Skills (résumé): workflow automation, email & SMS automation, technical support, client retention systems, pipeline & lead management, Zapier & third-party integrations, automated appointment booking, administrative support.
+
+## Claims to reconcile (résumé vs brief)
+| Topic | Brief | Résumé | Default until confirmed |
+|---|---|---|---|
+| Webinar scale | 3,000+ participants | "managing 100+ contacts" | Ask; possibly both true (100+ contacts in GHL vs 3,000+ campaign participants) |
+| Church support volume | ~80–85 calls/week | 160+ users supported | Use "160+ users"; add calls/week only if confirmed |
+| Percentages (30%, 25%) | — | Efficiency/downtime/conflict reductions | **Not used** unless he confirms they're measured |
+
 ## Open items to confirm
-1. **Name spelling:** brief says "Jared Gant"; Framer account and old site say **"Jared Gan"**.
-2. Professional email and LinkedIn URL.
-3. Permission to reuse images from the old Framer site (screenshots, portrait).
-4. Form destination: Supabase (connected), Formspree, or plain email.
-5. Optional: any real numbers for the old "0+" counters (clients, workflows, years) — or drop them.
+1. Concept choice (A recommended).
+2. Permission to reuse images from the old Framer site.
+3. Form destination: Supabase, Formspree, or email link.
+4. The webinar figure (see table above).
