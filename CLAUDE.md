@@ -24,3 +24,4 @@ This project follows the **website-studio** system. Run the `studio-workflow` sk
 - Preview locally: `python3 -m http.server 4321` from the repo root, then QA against `http://localhost:4321/`.
 - Only claims confirmed by Jared go on the site (see `.studio/brief.md`). No invented numbers, testimonials or results.
 - Source images live in `.studio/source-images/` (gitignored); optimised WebP in `assets/img/`.
+- Preview file: `python3 scripts/build-preview.py` → `dist/jared-gan-portfolio.html` (single file, opens by double-click).

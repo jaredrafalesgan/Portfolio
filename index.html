@@ -12,6 +12,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" imagesrcset="/assets/img/portrait-cutout-520.webp 520w, /assets/img/portrait-cutout-900.webp 900w" imagesizes="(min-width: 62rem) 560px, 92vw">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">
   {
@@ -52,69 +53,68 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="hero__role">GoHighLevel &amp; marketing automation specialist</p>
-          <h1 class="hero__title" id="hero-title">I build the follow-up that runs itself.</h1>
-          <p class="hero__lede">CRM setup, email and SMS workflows, pipelines and calendars in GoHighLevel, so every lead hears back on time and the call gets booked without anyone chasing it.</p>
+          <p class="hero__role"><span class="hero__pulse" aria-hidden="true"></span>GoHighLevel &amp; marketing automation specialist</p>
+          <h1 class="hero__title" id="hero-title">I build the <span class="nowrap">follow-up</span> that runs itself.</h1>
+          <p class="hero__lede">CRM, email and SMS workflows, pipelines and calendars in GoHighLevel, so every lead hears back on time and the call gets booked without anyone chasing it.</p>
           <div class="hero__actions">
             <a class="button button--primary" href="#contact">Start a project</a>
             <a class="link-quiet" href="#work">See the systems</a>
           </div>
-          <p class="hero__meta">Based in the Philippines. Working remotely with businesses and agencies.</p>
         </div>
 
-        <figure class="workflow" aria-labelledby="wf-caption" data-workflow>
-          <div class="workflow__bar">
-            <span class="workflow__name">[31.01] VSL – Reminder &amp; Tracking</span>
-            <span class="workflow__status"><span class="workflow__dot" aria-hidden="true"></span>Published</span>
-          </div>
-          <div class="workflow__canvas">
-            <ol class="wf-steps">
-              <li class="wf-node wf-node--trigger" data-step="0">
-                <span class="wf-node__kind">Trigger</span>
-                <span class="wf-node__title">Trigger link clicked</span>
-                <span class="wf-node__detail">Link is “VSL”</span>
-              </li>
-              <li class="wf-node wf-node--wait" data-step="1">
-                <span class="wf-node__kind">Wait</span>
-                <span class="wf-node__title">24 hours before appointment</span>
-              </li>
-              <li class="wf-node wf-node--condition" data-step="2">
-                <span class="wf-node__kind">If / else</span>
-                <span class="wf-node__title">Did they watch it?</span>
-                <div class="wf-branches">
-                  <div class="wf-branch wf-branch--yes" data-step="3b">
-                    <span class="wf-branch__label">Yes</span>
-                    <span class="wf-branch__end">End</span>
-                  </div>
-                  <div class="wf-branch wf-branch--no" data-step="3">
-                    <span class="wf-branch__label">No</span>
-                    <span class="wf-node wf-node--action wf-node--inline">
-                      <span class="wf-node__kind">Email</span>
-                      <span class="wf-node__title">VSL Reminder</span>
-                    </span>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="workflow__log" aria-hidden="true">
-            <p class="log-line" data-step="0"><span class="log-t">09:14:02</span> trigger <span class="log-k">link.clicked</span> “VSL” · contact 1042</p>
-            <p class="log-line" data-step="1"><span class="log-t">+23h 46m</span> wait <span class="log-k">until</span> 24h before appointment</p>
-            <p class="log-line" data-step="2"><span class="log-t">09:00:00</span> condition <span class="log-k">watched_vsl</span> = false → No</p>
-            <p class="log-line" data-step="3"><span class="log-t">09:00:01</span> email <span class="log-k">sent</span> “VSL Reminder”</p>
-          </div>
-          <figcaption class="workflow__caption" id="wf-caption">
-            <span>The structure of a reminder workflow I built in GoHighLevel. Contact data in the log is simulated.</span>
-            <button class="workflow__replay" type="button" data-replay hidden>Run again</button>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
+        <div class="hero__stage">
+          <div class="hero__canvas" aria-hidden="true"></div>
+          <img class="hero__portrait" src="/assets/img/portrait-cutout-900.webp" srcset="/assets/img/portrait-cutout-520.webp 520w, /assets/img/portrait-cutout-900.webp 900w" sizes="(min-width: 62rem) 560px, 92vw" width="900" height="831" fetchpriority="high" alt="Jared Gan, smiling, in a white shirt and tie.">
 
-    <!-- PROOF -->
-    <section class="proof" aria-label="Track record">
+          <figure class="workflow" aria-labelledby="wf-caption" data-workflow>
+            <div class="workflow__bar">
+              <span class="workflow__name">[31.01] VSL – Reminder &amp; Tracking</span>
+              <span class="workflow__status"><span class="workflow__dot" aria-hidden="true"></span>Live</span>
+            </div>
+            <div class="workflow__canvas">
+              <ol class="wf-steps">
+                <li class="wf-node wf-node--trigger" data-step="0">
+                  <span class="wf-node__kind">Trigger</span>
+                  <span class="wf-node__title">Link clicked: “VSL”</span>
+                </li>
+                <li class="wf-node wf-node--wait" data-step="1">
+                  <span class="wf-node__kind">Wait</span>
+                  <span class="wf-node__title">24 hours before appointment</span>
+                </li>
+                <li class="wf-node wf-node--condition" data-step="2">
+                  <span class="wf-node__kind">If / else</span>
+                  <span class="wf-node__title">Did they watch it?</span>
+                  <div class="wf-branches">
+                    <div class="wf-branch wf-branch--yes" data-step="3b">
+                      <span class="wf-branch__label">Yes</span>
+                      <span class="wf-branch__end">End</span>
+                    </div>
+                    <div class="wf-branch wf-branch--no" data-step="3">
+                      <span class="wf-branch__label">No</span>
+                      <span class="wf-node wf-node--action wf-node--inline">
+                        <span class="wf-node__title">Email: VSL Reminder</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="workflow__log" aria-hidden="true">
+              <p class="log-line" data-step="0"><span class="log-t">09:14:02</span> <span class="log-k">link.clicked</span> “VSL”</p>
+              <p class="log-line" data-step="1"><span class="log-t">+23h 46m</span> <span class="log-k">wait</span> 24h before appt</p>
+              <p class="log-line" data-step="2"><span class="log-t">09:00:00</span> <span class="log-k">watched_vsl</span> = false</p>
+              <p class="log-line" data-step="3"><span class="log-t">09:00:01</span> <span class="log-k">email.sent</span> “VSL Reminder”</p>
+            </div>
+            <figcaption class="workflow__caption" id="wf-caption">
+              <span>A real workflow structure I built. Log data is simulated.</span>
+              <button class="workflow__replay" type="button" data-replay hidden>Run again</button>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
       <div class="container">
-        <dl class="proof__list">
+        <dl class="proof__list" aria-label="Track record">
           <div class="proof__item">
             <dt class="proof__figure">3,000+</dt>
             <dd class="proof__label">webinar participants reached through registration and reminder systems I built</dd>
@@ -125,7 +125,7 @@
           </div>
           <div class="proof__item">
             <dt class="proof__figure">160+</dt>
-            <dd class="proof__label">users supported by phone and in person as a Technology Specialist</dd>
+            <dd class="proof__label">users supported as a Technology Specialist before automation</dd>
           </div>
         </dl>
       </div>
@@ -136,154 +136,143 @@
       <div class="container">
         <header class="section-head">
           <h2 class="section-title" id="work-title">Systems I’ve built</h2>
-          <p class="section-lede">Each one starts with a moment where leads were slipping through, and ends with a workflow that handles it every time.</p>
+          <p class="section-lede">Real GoHighLevel builds: the moment leads were slipping through, and the workflow that now catches them.</p>
         </header>
-
-        <!-- Case: Webinar -->
-        <article class="case" aria-labelledby="case-webinar">
-          <aside class="case__meta">
-            <h3 class="case__title" id="case-webinar">Webinar registration and reminders</h3>
-            <dl class="meta-list">
-              <div><dt>For</dt><dd>The Business Catalyst</dd></div>
-              <div><dt>Role</dt><dd>GoHighLevel Specialist</dd></div>
-              <div><dt>Built with</dt><dd>GHL forms, website, calendars, workflows, email &amp; SMS</dd></div>
-            </dl>
-          </aside>
-          <div class="case__body">
-            <dl class="case__story">
-              <div><dt>The problem</dt><dd>People register for a webinar and forget it by the day. Sending reminders by hand doesn’t scale to a full campaign.</dd></div>
-              <div><dt>What I built</dt><dd>A GoHighLevel website and registration system: forms that tag each registrant, calendar integration, and an automated email and SMS reminder sequence leading up to the event.</dd></div>
-              <div><dt>Result</dt><dd>The system supported webinar campaigns with <strong>3,000+ participants</strong>.</dd></div>
-            </dl>
-            <figure class="shot shot--poster">
-              <img src="/assets/img/design-webinar-growth-640.webp" width="640" height="800" loading="lazy" decoding="async" alt="Webinar promotion graphic: Business Growth Strategies, a live online session with a Register Now button.">
-              <figcaption>A webinar promotion graphic I designed in Canva. Registrations from campaigns like this land in the GoHighLevel form and start the reminder sequence.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Case: Service Flow Systems -->
-        <article class="case" aria-labelledby="case-sfs">
-          <aside class="case__meta">
-            <h3 class="case__title" id="case-sfs">Appointment reminders that land on time</h3>
-            <dl class="meta-list">
-              <div><dt>For</dt><dd>Service Flow Systems</dd></div>
-              <div><dt>Scope</dt><dd>Repairing and improving reminder workflows</dd></div>
-              <div><dt>Built with</dt><dd>GHL workflows, if/else conditions, email templates</dd></div>
-            </dl>
-          </aside>
-          <div class="case__body">
-            <dl class="case__story">
-              <div><dt>The problem</dt><dd>Automated reminders weren’t reliably reaching customers at the right moment before their appointment.</dd></div>
-              <div><dt>What I built</dt><dd>I repaired and restructured the reminder workflows: a confirmation when the appointment is booked, a reminder the day before, and a check on whether the prospect watched the pre-meeting video. Only people who skipped it get a nudge.</dd></div>
-              <div><dt>Result</dt><dd>Each customer gets the right message at the right time, and nobody gets reminded about something they already did.</dd></div>
-            </dl>
-            <figure class="shot">
-              <img src="/assets/img/wf-appointment-reminders-1600.webp" srcset="/assets/img/wf-appointment-reminders-900.webp 900w, /assets/img/wf-appointment-reminders-1600.webp 1600w" sizes="(min-width: 1000px) 760px, 100vw" width="1600" height="786" loading="lazy" decoding="async" alt="The GoHighLevel workflow builder showing “[31.03] Appointment Reminders”, with the email action “See You Soon! Your Appointment Reminder” open.">
-              <figcaption>“[31.03] Appointment Reminders” in the workflow builder. The open step sends the day-before email.</figcaption>
-            </figure>
-            <div class="shot-row">
-              <figure class="shot shot--tall">
-                <img src="/assets/img/wf-vsl-reminder-550.webp" width="550" height="929" loading="lazy" decoding="async" alt="Workflow “[31.01] VSL – Reminder &amp; Tracking”: trigger link clicked, wait until 24 hours before the appointment, then a yes/no branch on whether they watched the video.">
-                <figcaption>The video check: 24 hours before the call, an if/else branch decides who needs a reminder.</figcaption>
-              </figure>
-              <figure class="shot shot--tall">
-                <img src="/assets/img/email-sfs-video-497.webp" width="497" height="879" loading="lazy" decoding="async" alt="Service Flow Systems email headed “You Haven’t Watched the Video Yet” with a Watch Before Meeting button.">
-                <figcaption>The nudge, sent only on the “No” branch.</figcaption>
-              </figure>
-              <figure class="shot shot--tall">
-                <img src="/assets/img/email-sfs-confirmed-440.webp" width="440" height="934" loading="lazy" decoding="async" alt="Service Flow Systems email headed “Your Appointment is confirmed. See You Soon” with date, time and meeting link merge fields.">
-                <figcaption>Confirmation email with date, time and link filled from the booking.</figcaption>
-              </figure>
-            </div>
-          </div>
-        </article>
-
-        <!-- Case: Customer journeys -->
-        <article class="case" aria-labelledby="case-journeys">
-          <aside class="case__meta">
-            <h3 class="case__title" id="case-journeys">Customer journeys across 15+ workflows</h3>
-            <dl class="meta-list">
-              <div><dt>Scope</dt><dd>Lead follow-up, booking confirmations, lead recapture</dd></div>
-              <div><dt>Built with</dt><dd>GHL workflows, SMS, email, merge fields, tags</dd></div>
-            </dl>
-          </aside>
-          <div class="case__body">
-            <dl class="case__story">
-              <div><dt>The problem</dt><dd>Leads go cold in the gap between “interested” and “booked”, and old leads are never contacted again.</dd></div>
-              <div><dt>What I built</dt><dd>More than 15 email and SMS workflows: SMS confirmations the moment a call is booked, follow-ups for new leads, and a long-term recapture sequence that re-engages contacts who went quiet. Merge fields personalise every message.</dd></div>
-              <div><dt>Result</dt><dd>Faster responses to new leads and a business that keeps talking to its contacts without anyone remembering to.</dd></div>
-            </dl>
-            <div class="shot-row">
-              <figure class="shot shot--tall">
-                <img src="/assets/img/wf-call-booked-sms-391.webp" width="391" height="944" loading="lazy" decoding="async" alt="Workflow “Call Booked → SMS Confirmations &amp; Presell” in the GoHighLevel builder.">
-                <figcaption>“Call Booked → SMS Confirmations &amp; Presell.”</figcaption>
-              </figure>
-              <figure class="shot shot--tall">
-                <img src="/assets/img/wf-lead-recapture-535.webp" width="535" height="943" loading="lazy" decoding="async" alt="Workflow “[31.08] Long-Term Lead Recapture” in the GoHighLevel builder, a long sequence of timed steps.">
-                <figcaption>“[31.08] Long-Term Lead Recapture”: a slow, spaced sequence for leads who went quiet.</figcaption>
-              </figure>
-              <figure class="shot shot--tall shot--email">
-                <img src="/assets/img/email-zoom-booked-358.webp" width="358" height="503" loading="lazy" decoding="async" alt="Email editor with merge fields: contact first name, appointment start time, meeting location and email signature.">
-                <figcaption>Booking email built on merge fields. The time shows in the contact’s own time zone.</figcaption>
-              </figure>
-            </div>
-          </div>
-        </article>
-
-        <!-- Case: Tri Refrigeration -->
-        <article class="case" aria-labelledby="case-tri">
-          <aside class="case__meta">
-            <h3 class="case__title" id="case-tri">Inbound calls without the spam</h3>
-            <dl class="meta-list">
-              <div><dt>For</dt><dd>Tri Refrigeration &amp; HVAC</dd></div>
-              <div><dt>Scope</dt><dd>IVR spam filtering, website</dd></div>
-            </dl>
-          </aside>
-          <div class="case__body">
-            <dl class="case__story">
-              <div><dt>The problem</dt><dd>Unwanted and spam calls were getting through to the team and crowding out real customers.</dd></div>
-              <div><dt>What I built</dt><dd>I worked on an IVR spam-filtering setup that screens inbound calls before they reach a person, so the team’s time goes to customers who actually need service.</dd></div>
-            </dl>
-            <div class="ivr" role="img" aria-label="Diagram: an inbound call meets an IVR prompt; real callers continue to the team, unwanted calls stop at the prompt.">
-              <span class="ivr__step">Inbound call</span>
-              <span class="ivr__arrow" aria-hidden="true"></span>
-              <span class="ivr__step ivr__step--gate">IVR prompt</span>
-              <span class="ivr__arrow" aria-hidden="true"></span>
-              <span class="ivr__split">
-                <span class="ivr__out ivr__out--pass">Caller responds → routed to the team</span>
-                <span class="ivr__out ivr__out--stop">No response → filtered out</span>
-              </span>
-            </div>
-            <p class="ivr__note">How IVR screening works in general. The exact menu depends on the business.</p>
-            <figure class="shot">
-              <img src="/assets/img/site-tri-hvac-1600.webp" srcset="/assets/img/site-tri-hvac-900.webp 900w, /assets/img/site-tri-hvac-1600.webp 1600w" sizes="(min-width: 1000px) 760px, 100vw" width="1600" height="793" loading="lazy" decoding="async" alt="Tri Refrigeration &amp; HVAC website hero with a “Get a free quote” form.">
-              <figcaption>Tri Refrigeration &amp; HVAC website, with the free-quote form on the first screen.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Case: Websites -->
-        <article class="case case--gallery" aria-labelledby="case-sites">
-          <aside class="case__meta">
-            <h3 class="case__title" id="case-sites">Websites and funnels</h3>
-            <dl class="meta-list">
-              <div><dt>Built with</dt><dd>GoHighLevel sites and funnels, forms</dd></div>
-            </dl>
-            <p class="case__aside">Landing pages and service sites built in GoHighLevel, where a quote form turns a visitor into a CRM contact the moment they submit.</p>
-          </aside>
-          <div class="case__body gallery">
-            <figure class="shot gallery__lead">
-              <img src="/assets/img/site-paulas-tree-1600.webp" srcset="/assets/img/site-paulas-tree-900.webp 900w, /assets/img/site-paulas-tree-1600.webp 1600w" sizes="(min-width: 1000px) 760px, 100vw" width="1600" height="801" loading="lazy" decoding="async" alt="Paula’s A1 Tree Removal &amp; Stump Grind website with a quote request form.">
-              <figcaption>Paula’s A1 Tree Removal &amp; Stump Grind.</figcaption>
-            </figure>
-            <figure class="shot">
-              <img src="/assets/img/site-nyc-grooming-900.webp" srcset="/assets/img/site-nyc-grooming-600.webp 600w, /assets/img/site-nyc-grooming-900.webp 900w" sizes="(min-width: 48rem) 300px, 100vw" width="900" height="448" loading="lazy" decoding="async" alt="NYC dog grooming, boarding and training website with a quote form.">
-              <figcaption>NYC dog grooming, boarding &amp; training.</figcaption>
-            </figure>
-          </div>
-        </article>
       </div>
+
+      <!-- Project: SFS -->
+      <article class="project" aria-labelledby="p-sfs">
+        <div class="container">
+          <header class="project__head">
+            <p class="project__client">Service Flow Systems</p>
+            <h3 class="project__title" id="p-sfs">Appointment reminders that land on time</h3>
+          </header>
+          <div class="scene scene--sfs">
+            <div class="frame frame--app scene__main">
+              <div class="frame__bar"><span class="frame__label">GoHighLevel · Workflow builder</span></div>
+              <img src="/assets/img/wf-appointment-reminders-1600.webp" srcset="/assets/img/wf-appointment-reminders-900.webp 900w, /assets/img/wf-appointment-reminders-1600.webp 1600w" sizes="(min-width: 62rem) 860px, 92vw" width="1600" height="786" loading="lazy" decoding="async" alt="The GoHighLevel workflow builder showing “[31.03] Appointment Reminders”, with the day-before email action open.">
+            </div>
+            <div class="frame frame--phone scene__phone scene__phone--a">
+              <img src="/assets/img/email-sfs-video-497.webp" width="497" height="879" loading="lazy" decoding="async" alt="Email: “You Haven’t Watched the Video Yet”, with a Watch Before Meeting button.">
+            </div>
+            <div class="frame frame--phone scene__phone scene__phone--b">
+              <img src="/assets/img/email-sfs-confirmed-440.webp" width="440" height="934" loading="lazy" decoding="async" alt="Email: “Your Appointment is confirmed. See You Soon”, with date, time and meeting link merge fields.">
+            </div>
+          </div>
+          <dl class="project__facts">
+            <div><dt>Problem</dt><dd>Reminders weren’t reliably reaching customers at the right moment.</dd></div>
+            <div><dt>What I built</dt><dd>Repaired and restructured the reminders: confirmation on booking, a day-before reminder, and a video check that only nudges people who skipped it.</dd></div>
+            <div><dt>Result</dt><dd>The right message at the right time, and no reminders about things already done.</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Project: Webinar -->
+      <article class="project" aria-labelledby="p-webinar">
+        <div class="container">
+          <header class="project__head">
+            <p class="project__client">The Business Catalyst</p>
+            <h3 class="project__title" id="p-webinar">A webinar system for 3,000+ participants</h3>
+          </header>
+          <div class="scene scene--webinar">
+            <div class="frame frame--poster">
+              <img src="/assets/img/design-webinar-growth-640.webp" width="640" height="800" loading="lazy" decoding="async" alt="Webinar promotion graphic: Business Growth Strategies, a live online session, designed in Canva.">
+            </div>
+            <ol class="journey" aria-label="How a registrant moves through the system">
+              <li class="journey__step"><span class="journey__kind">Form</span><span class="journey__title">Registers on the GoHighLevel page</span></li>
+              <li class="journey__step"><span class="journey__kind">Tag</span><span class="journey__title">Tagged as a webinar registrant</span></li>
+              <li class="journey__step"><span class="journey__kind">Calendar</span><span class="journey__title">Event added through the calendar integration</span></li>
+              <li class="journey__step"><span class="journey__kind">Email + SMS</span><span class="journey__title">Automated reminders leading up to the event</span></li>
+              <li class="journey__step journey__step--goal"><span class="journey__kind">Goal</span><span class="journey__title">Shows up to the live session</span></li>
+            </ol>
+          </div>
+          <dl class="project__facts">
+            <div><dt>Problem</dt><dd>Registrants forget by the day, and manual reminders don’t scale to a full campaign.</dd></div>
+            <div><dt>What I built</dt><dd>A GoHighLevel website and registration system with tagging, calendar integration and an email and SMS reminder sequence.</dd></div>
+            <div><dt>Result</dt><dd>Supported webinar campaigns with <strong>3,000+ participants</strong>.</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Project: Journeys -->
+      <article class="project" aria-labelledby="p-journeys">
+        <div class="container">
+          <header class="project__head">
+            <p class="project__client">Customer journeys</p>
+            <h3 class="project__title" id="p-journeys">15+ workflows that keep leads warm</h3>
+          </header>
+          <div class="scene scene--journeys">
+            <div class="frame frame--app">
+              <div class="frame__bar"><span class="frame__label">[31.01] VSL – Reminder &amp; Tracking</span></div>
+              <img src="/assets/img/wf-vsl-crop-550.webp" width="550" height="560" loading="lazy" decoding="async" alt="Workflow builder: trigger link clicked, wait until 24 hours before the appointment, then an if/else on whether the video was watched.">
+            </div>
+            <div class="library">
+              <p class="library__title">From the workflow library</p>
+              <ul class="library__list">
+                <li><span class="library__dot" aria-hidden="true"></span>Call Booked → SMS Confirmations &amp; Presell</li>
+                <li><span class="library__dot" aria-hidden="true"></span>[31.01] VSL – Reminder &amp; Tracking</li>
+                <li><span class="library__dot" aria-hidden="true"></span>[31.03] Appointment Reminders</li>
+                <li><span class="library__dot" aria-hidden="true"></span>[31.08] Long-Term Lead Recapture</li>
+              </ul>
+              <div class="frame frame--email">
+                <img src="/assets/img/email-zoom-booked-358.webp" width="358" height="503" loading="lazy" decoding="async" alt="Booking email built on merge fields: first name, appointment start time, meeting link and signature.">
+              </div>
+            </div>
+          </div>
+          <dl class="project__facts">
+            <div><dt>Problem</dt><dd>Leads go cold between “interested” and “booked”, and old leads are never contacted again.</dd></div>
+            <div><dt>What I built</dt><dd>SMS confirmations the moment a call is booked, new-lead follow-ups, and a long-term recapture sequence, all personalised with merge fields.</dd></div>
+            <div><dt>Result</dt><dd>Faster replies to new leads, and contacts who keep hearing from the business automatically.</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Project: Tri -->
+      <article class="project" aria-labelledby="p-tri">
+        <div class="container">
+          <header class="project__head">
+            <p class="project__client">Tri Refrigeration &amp; HVAC</p>
+            <h3 class="project__title" id="p-tri">Inbound calls without the spam</h3>
+          </header>
+          <div class="scene scene--tri">
+            <div class="frame frame--browser scene__main">
+              <div class="frame__bar"><span class="frame__label">Tri Refrigeration &amp; HVAC</span></div>
+              <img src="/assets/img/site-tri-hvac-1600.webp" srcset="/assets/img/site-tri-hvac-900.webp 900w, /assets/img/site-tri-hvac-1600.webp 1600w" sizes="(min-width: 62rem) 900px, 92vw" width="1600" height="793" loading="lazy" decoding="async" alt="Tri Refrigeration &amp; HVAC website with a “Get a free quote” form.">
+            </div>
+            <div class="ivr" role="img" aria-label="IVR screening: an inbound call meets a prompt; callers who respond reach the team, the rest are filtered out.">
+              <p class="ivr__title">IVR screening</p>
+              <span class="ivr__step">Inbound call</span>
+              <span class="ivr__step ivr__step--gate">Prompt</span>
+              <span class="ivr__out ivr__out--pass">Responds → routed to team</span>
+              <span class="ivr__out">No response → filtered out</span>
+            </div>
+          </div>
+          <dl class="project__facts project__facts--two">
+            <div><dt>Problem</dt><dd>Spam calls were getting through and crowding out real customers.</dd></div>
+            <div><dt>What I built</dt><dd>Worked on an IVR spam-filtering setup that screens inbound calls before they reach a person.</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Project: Websites -->
+      <article class="project project--last" aria-labelledby="p-sites">
+        <div class="container">
+          <header class="project__head">
+            <p class="project__client">Websites &amp; funnels</p>
+            <h3 class="project__title" id="p-sites">Service sites built in GoHighLevel</h3>
+          </header>
+          <div class="scene scene--sites">
+            <div class="frame frame--browser">
+              <div class="frame__bar"><span class="frame__label">Paula’s A1 Tree Removal &amp; Stump Grind</span></div>
+              <img src="/assets/img/site-paulas-tree-1600.webp" srcset="/assets/img/site-paulas-tree-900.webp 900w, /assets/img/site-paulas-tree-1600.webp 1600w" sizes="(min-width: 62rem) 640px, 92vw" width="1600" height="801" loading="lazy" decoding="async" alt="Paula’s A1 Tree Removal &amp; Stump Grind website with a quote request form.">
+            </div>
+            <div class="frame frame--browser">
+              <div class="frame__bar"><span class="frame__label">NYC dog grooming, boarding &amp; training</span></div>
+              <img src="/assets/img/site-nyc-grooming-900.webp" srcset="/assets/img/site-nyc-grooming-600.webp 600w, /assets/img/site-nyc-grooming-900.webp 900w" sizes="(min-width: 62rem) 640px, 92vw" width="900" height="448" loading="lazy" decoding="async" alt="NYC dog grooming, boarding and training website with a quote form.">
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <!-- APPROACH -->
@@ -291,35 +280,18 @@
       <div class="container">
         <header class="section-head">
           <h2 class="section-title" id="approach-title">How I build a workflow</h2>
-          <p class="section-lede">The same four steps, whether it’s one reminder or a full customer journey.</p>
+          <p class="section-lede">The same four steps, whether it’s one reminder or a whole customer journey.</p>
         </header>
         <ol class="steps">
-          <li class="step">
-            <span class="step__n" aria-hidden="true">1</span>
-            <h3 class="step__title">Map the journey</h3>
-            <p>Every moment a lead or customer should hear from you, and what happens if they don’t respond.</p>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">2</span>
-            <h3 class="step__title">Set triggers and tags</h3>
-            <p>Forms, links and bookings start the workflow. Tags record where each contact is, so the CRM always knows.</p>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">3</span>
-            <h3 class="step__title">Time the follow-up</h3>
-            <p>Waits, business hours and time zones, so messages arrive when people will actually read them.</p>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">4</span>
-            <h3 class="step__title">Test every branch</h3>
-            <p>Test contacts go down each path, and I check the execution logs before anything is published.</p>
-          </li>
+          <li class="step"><span class="step__n" aria-hidden="true">1</span><h3 class="step__title">Map the journey</h3><p>Every moment a contact should hear from you, and what happens if they don’t respond.</p></li>
+          <li class="step"><span class="step__n" aria-hidden="true">2</span><h3 class="step__title">Set triggers and tags</h3><p>Forms, links and bookings start the workflow; tags tell the CRM where each contact is.</p></li>
+          <li class="step"><span class="step__n" aria-hidden="true">3</span><h3 class="step__title">Time the follow-up</h3><p>Waits, business hours and time zones, so messages arrive when people read them.</p></li>
+          <li class="step"><span class="step__n" aria-hidden="true">4</span><h3 class="step__title">Test every branch</h3><p>Test contacts down each path and a check of the execution logs before publishing.</p></li>
         </ol>
-
         <div class="toolkit">
           <h3 class="toolkit__title">What I work with</h3>
           <dl class="toolkit__list">
-            <div><dt>GoHighLevel</dt><dd>CRM setup, pipelines, workflows, websites and funnels, forms, calendars, email and SMS</dd></div>
+            <div><dt>GoHighLevel</dt><dd>CRM, pipelines, workflows, websites and funnels, forms, calendars, email and SMS</dd></div>
             <div><dt>Zapier &amp; Make</dt><dd>Connecting GoHighLevel to the other apps a business runs on</dd></div>
             <div><dt>Canva Pro</dt><dd>Campaign graphics, email headers and social posts</dd></div>
             <div><dt>Google Workspace &amp; Excel</dt><dd>Reports, trackers, calendars and scheduling</dd></div>
@@ -329,65 +301,35 @@
       </div>
     </section>
 
-    <!-- ABOUT / EXPERIENCE -->
+    <!-- ABOUT -->
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="container about__grid">
         <div class="about__portrait">
-          <img src="/assets/img/portrait-960.webp" srcset="/assets/img/portrait-480.webp 480w, /assets/img/portrait-960.webp 960w" sizes="(min-width: 1000px) 360px, 70vw" width="960" height="960" loading="lazy" decoding="async" alt="Portrait of Jared Gan smiling, in a white shirt and tie.">
+          <img src="/assets/img/portrait-side-900.webp" srcset="/assets/img/portrait-side-480.webp 480w, /assets/img/portrait-side-900.webp 900w" sizes="(min-width: 62rem) 420px, 88vw" width="900" height="900" loading="lazy" decoding="async" alt="Jared Gan in a white shirt and tie, looking to the side.">
         </div>
         <div class="about__copy">
           <h2 class="section-title" id="about-title">About</h2>
           <p class="about__lede">I’m Jared, a GoHighLevel specialist in the Philippines. Before automation I worked in technical support and scheduling, the places where things fall through when follow-up depends on someone remembering. Now I build the systems that do the remembering.</p>
           <ol class="timeline">
-            <li>
-              <span class="timeline__when">Mar 2026 – now</span>
-              <div>
-                <h3 class="timeline__role">GoHighLevel Specialist</h3>
-                <p class="timeline__org">The Business Catalyst</p>
-                <p>Built 15+ email and SMS workflows and customer journeys, and a GoHighLevel website and webinar registration system.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__when">Jun 2025 – Mar 2026</span>
-              <div>
-                <h3 class="timeline__role">Technology Specialist</h3>
-                <p class="timeline__org">The Church of Jesus Christ of Latter-day Saints</p>
-                <p>Technical support and troubleshooting for 160+ users by phone and in person; reports and trackers in Excel and Google Sheets.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__when">Jan 2023 – Mar 2024</span>
-              <div>
-                <h3 class="timeline__role">Assistant Executive Secretary</h3>
-                <p class="timeline__org">The Church of Jesus Christ of Latter-day Saints</p>
-                <p>Email, calendars and scheduling for 10–15 meetings a week; Canva materials for 10+ events and meetings a month.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__when">2021 – 2023</span>
-              <div>
-                <h3 class="timeline__role">Senior High School</h3>
-                <p class="timeline__org">Arellano University</p>
-                <p>Top #1 Research Awardee for a research project on salt battery technology.</p>
-              </div>
-            </li>
+            <li><span class="timeline__when">Mar 2026 – now</span><div><h3 class="timeline__role">GoHighLevel Specialist</h3><p class="timeline__org">The Business Catalyst</p><p>15+ email and SMS workflows and customer journeys; a GoHighLevel website and webinar registration system.</p></div></li>
+            <li><span class="timeline__when">Jun 2025 – Mar 2026</span><div><h3 class="timeline__role">Technology Specialist</h3><p class="timeline__org">The Church of Jesus Christ of Latter-day Saints</p><p>Technical support for 160+ users by phone and in person; reports and trackers in Excel and Google Sheets.</p></div></li>
+            <li><span class="timeline__when">Jan 2023 – Mar 2024</span><div><h3 class="timeline__role">Assistant Executive Secretary</h3><p class="timeline__org">The Church of Jesus Christ of Latter-day Saints</p><p>Calendars and scheduling for 10–15 meetings a week; Canva materials for 10+ events a month.</p></div></li>
+            <li><span class="timeline__when">2021 – 2023</span><div><h3 class="timeline__role">Senior High School</h3><p class="timeline__org">Arellano University</p><p>Top #1 Research Awardee, salt battery technology research.</p></div></li>
           </ol>
         </div>
       </div>
     </section>
 
-    <!-- DESIGN STRIP -->
+    <!-- DESIGNS -->
     <section class="designs" aria-labelledby="designs-title">
-      <div class="container">
-        <header class="designs__head">
-          <h2 class="designs__title" id="designs-title">Campaign graphics</h2>
-          <p class="designs__lede">The visuals that go out with the automations, designed in Canva.</p>
-        </header>
+      <div class="container designs__head">
+        <h2 class="designs__title" id="designs-title">Campaign graphics</h2>
+        <p class="designs__lede">The visuals that go out with the automations, designed in Canva.</p>
       </div>
       <div class="designs__rail" tabindex="0" aria-label="Campaign graphics, scroll horizontally">
         <img src="/assets/img/design-hvac-640.webp" width="640" height="800" loading="lazy" decoding="async" alt="HVAC services promotional graphic for Tri Refrigeration &amp; HVAC.">
-        <img src="/assets/img/design-petshop-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pet shop dog food promotion graphic with a 20% off offer.">
         <img src="/assets/img/design-webinar-social-640.webp" width="640" height="800" loading="lazy" decoding="async" alt="Webinar promotion graphic: Social Media Marketing, live online session.">
+        <img src="/assets/img/design-petshop-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Pet shop dog food promotion graphic with a 20% off offer.">
         <img src="/assets/img/design-rental-640.webp" width="640" height="640" loading="lazy" decoding="async" alt="Rental management promotion graphic: Boost Rental Revenue.">
         <img src="/assets/img/design-ac-cleaning-640.webp" width="640" height="800" loading="lazy" decoding="async" alt="AC cleaning services promotional graphic.">
       </div>
@@ -395,55 +337,60 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact__grid">
-        <div class="contact__intro">
-          <h2 class="contact__title" id="contact-title">Tell me where your leads go quiet.</h2>
-          <p>Describe your setup and what you’d like automated. Whether it’s one workflow, a full GoHighLevel build or an ongoing role, I’ll reply by email.</p>
-          <ul class="contact__links">
-            <li><span>Email</span><a href="mailto:jaredrafalesgan@gmail.com">jaredrafalesgan@gmail.com</a></li>
-            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/jared-gan" rel="noopener" target="_blank">linkedin.com/in/jared-gan</a></li>
-            <li><span>Upwork</span><a href="https://www.upwork.com/freelancers/~01782c0aad50a452c9" rel="noopener" target="_blank">Hire me on Upwork</a></li>
-          </ul>
+      <div class="container">
+        <h2 class="contact__title" id="contact-title">Let’s make your <span class="nowrap">follow-up</span> run itself.</h2>
+        <div class="contact__grid">
+          <div class="contact__intro">
+            <p>Tell me where your leads go quiet and what you’d like automated. One workflow, a full GoHighLevel build or an ongoing role: I’ll reply by email.</p>
+            <ul class="contact__links">
+              <li><span>Email</span><a href="mailto:jaredrafalesgan@gmail.com">jaredrafalesgan@gmail.com</a></li>
+              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/jared-gan" rel="noopener" target="_blank">linkedin.com/in/jared-gan</a></li>
+              <li><span>Upwork</span><a href="https://www.upwork.com/freelancers/~01782c0aad50a452c9" rel="noopener" target="_blank">Hire me on Upwork</a></li>
+            </ul>
+          </div>
+          <form class="form" data-contact-form data-endpoint="" action="mailto:jaredrafalesgan@gmail.com" method="post" enctype="text/plain" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-name">Name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+                <p class="field__error" id="f-name-error" hidden>Please enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required>
+                <p class="field__error" id="f-email-error" hidden>Please enter a valid email address.</p>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-company">Business or agency <span class="field__opt">(optional)</span></label>
+                <input id="f-company" name="company" type="text" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="f-need">What do you need?</label>
+                <select id="f-need" name="need">
+                  <option>GoHighLevel setup</option>
+                  <option>Workflow automation (email &amp; SMS)</option>
+                  <option>Funnel or website</option>
+                  <option>Fixing an existing setup</option>
+                  <option>Ongoing support or a full-time role</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="5" required></textarea>
+              <p class="field__error" id="f-message-error" hidden>Please add a short message.</p>
+            </div>
+            <div class="field field--hp" aria-hidden="true">
+              <label for="f-website">Website</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <button class="button button--primary button--large form__submit" type="submit">Send inquiry</button>
+            <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+          </form>
         </div>
-
-        <form class="form" data-contact-form data-endpoint="" action="mailto:jaredrafalesgan@gmail.com" method="post" enctype="text/plain" novalidate>
-          <div class="field">
-            <label for="f-name">Name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-            <p class="field__error" id="f-name-error" hidden>Please enter your name.</p>
-          </div>
-          <div class="field">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required>
-            <p class="field__error" id="f-email-error" hidden>Please enter a valid email address.</p>
-          </div>
-          <div class="field">
-            <label for="f-company">Business or agency <span class="field__opt">(optional)</span></label>
-            <input id="f-company" name="company" type="text" autocomplete="organization">
-          </div>
-          <div class="field">
-            <label for="f-need">What do you need?</label>
-            <select id="f-need" name="need">
-              <option>GoHighLevel setup</option>
-              <option>Workflow automation (email &amp; SMS)</option>
-              <option>Funnel or website</option>
-              <option>Fixing an existing setup</option>
-              <option>Ongoing support or a full-time role</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-message">Message</label>
-            <textarea id="f-message" name="message" rows="5" required></textarea>
-            <p class="field__error" id="f-message-error" hidden>Please add a short message.</p>
-          </div>
-          <div class="field field--hp" aria-hidden="true">
-            <label for="f-website">Website</label>
-            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
-          </div>
-          <button class="button button--primary form__submit" type="submit">Send inquiry</button>
-          <p class="form__status" role="status" aria-live="polite" data-form-status></p>
-        </form>
       </div>
     </section>
   </main>
