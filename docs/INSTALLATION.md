@@ -3,7 +3,7 @@
 Everything here is free unless marked 💳. Nothing here deploys anything publicly.
 
 ## 0. Keep this system somewhere permanent
-The cloud session that built this is ephemeral. It lives at https://github.com/jaredrafalesgan/Portfolio. After that, every step below works on any machine.
+The cloud session that built this is ephemeral. It lives at https://github.com/jaredrafalesgan/Portfolio, so every step below works on any machine.
 
 ## 1. Skills (one command)
 
