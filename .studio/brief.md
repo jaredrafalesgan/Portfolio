@@ -69,6 +69,8 @@ Workflow canvas, trigger nodes, "Wait 1 day" steps, if/else branches, tags, pipe
 - Education: Arellano University, Senior High School 2021–2023 — research project on salt battery technology, Top #1 Research Awardee.
 - Skills (résumé): workflow automation, email & SMS automation, technical support, client retention systems, pipeline & lead management, Zapier & third-party integrations, automated appointment booking, administrative support.
 
+- Upwork profile: https://www.upwork.com/freelancers/~01782c0aad50a452c9 (link on site as a secondary hire route; content not machine-readable — Cloudflare blocks automated access).
+
 ## Claims to reconcile (résumé vs brief)
 | Topic | Brief | Résumé | Default until confirmed |
 |---|---|---|---|
