@@ -1,0 +1,7 @@
+{
+  "name": "website-studio",
+  "version": "1.0.0",
+  "description": "An agency-grade website design and development system: creative direction, premium UI, anti-generic design, motion, frontend engineering, research, conversion, performance/SEO, and real-browser visual QA.",
+  "author": { "name": "website-studio" },
+  "keywords": ["web design", "frontend", "creative direction", "motion", "seo", "accessibility", "playwright", "qa"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "website-studio",
+  "owner": { "name": "website-studio" },
+  "plugins": [
+    {
+      "name": "website-studio",
+      "source": "./",
+      "description": "Agency-grade website design and development system (10 skills + QA scripts)."
+    }
+  ]
+}

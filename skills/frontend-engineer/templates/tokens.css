@@ -1,0 +1,65 @@
+/* Design tokens — fill every value from .studio/direction.md. Components use ONLY these. */
+@layer reset, base, layout, components, utilities;
+
+:root {
+  /* ---------- Color (OKLCH; tune hue from the subject's world) ---------- */
+  --hue: 60;
+  --color-ground:     oklch(97% 0.010 var(--hue));
+  --color-surface:    oklch(93% 0.014 var(--hue));
+  --color-line:       oklch(85% 0.016 var(--hue));
+  --color-muted:      oklch(48% 0.020 var(--hue));
+  --color-ink:        oklch(21% 0.022 var(--hue));
+  --color-accent:     oklch(57% 0.160 calc(var(--hue) + 160));
+  --color-accent-ink: oklch(98% 0.008 var(--hue));
+  --color-focus:      var(--color-accent);
+  --color-danger:     oklch(55% 0.19 27);
+  --color-success:    oklch(55% 0.13 150);
+
+  /* ---------- Type ---------- */
+  --font-display: "REPLACE Display", ui-serif, Georgia, serif;
+  --font-text:    "REPLACE Text", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --step--1: clamp(0.83rem, 0.80rem + 0.15vw, 0.90rem);
+  --step-0:  clamp(1.00rem, 0.95rem + 0.25vw, 1.13rem);
+  --step-1:  clamp(1.25rem, 1.15rem + 0.45vw, 1.50rem);
+  --step-2:  clamp(1.56rem, 1.40rem + 0.80vw, 2.00rem);
+  --step-3:  clamp(1.95rem, 1.65rem + 1.40vw, 2.75rem);
+  --step-4:  clamp(2.44rem, 1.90rem + 2.60vw, 4.00rem);
+  --step-5:  clamp(3.05rem, 2.10rem + 4.60vw, 6.00rem);
+  --display: clamp(3.50rem, 1.50rem + 9.00vw, 10.0rem);
+
+  --leading-tight: 1.05; --leading-snug: 1.2; --leading-body: 1.6;
+  --tracking-display: -0.03em; --tracking-label: 0.04em;
+  --measure: 66ch;
+
+  /* ---------- Space (fluid, 8-based) ---------- */
+  --space-3xs: clamp(0.25rem, 0.23rem + 0.1vw, 0.31rem);
+  --space-2xs: clamp(0.50rem, 0.47rem + 0.1vw, 0.56rem);
+  --space-xs:  clamp(0.75rem, 0.70rem + 0.2vw, 0.88rem);
+  --space-s:   clamp(1.00rem, 0.95rem + 0.25vw, 1.13rem);
+  --space-m:   clamp(1.50rem, 1.40rem + 0.45vw, 1.69rem);
+  --space-l:   clamp(2.00rem, 1.85rem + 0.65vw, 2.25rem);
+  --space-xl:  clamp(3.00rem, 2.75rem + 1.10vw, 3.38rem);
+  --space-2xl: clamp(4.00rem, 3.60rem + 1.80vw, 5.00rem);
+  --space-3xl: clamp(6.00rem, 5.00rem + 4.50vw, 9.00rem);
+  --space-4xl: clamp(8.00rem, 6.00rem + 9.00vw, 14.0rem);
+
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --content-max: 72rem;
+  --wide-max: 88rem;
+
+  /* ---------- Shape & depth (hierarchy, not one value everywhere) ---------- */
+  --radius-s: 2px; --radius-m: 6px; --radius-l: 14px;
+  --shadow-raised: 0 1px 1px oklch(20% 0.02 var(--hue) / 0.06), 0 6px 18px -6px oklch(20% 0.02 var(--hue) / 0.14);
+  --border: 1px solid var(--color-line);
+
+  /* ---------- Motion ---------- */
+  --dur-instant: 100ms; --dur-fast: 180ms; --dur-base: 280ms; --dur-slow: 480ms; --dur-story: 900ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+
+  /* ---------- Layers ---------- */
+  --z-nav: 100; --z-overlay: 200; --z-modal: 300; --z-toast: 400;
+}
