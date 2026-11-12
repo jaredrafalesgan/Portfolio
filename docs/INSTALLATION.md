@@ -27,7 +27,7 @@ This installs the 10 website-studio skills plus 16 curated official skills into 
 
 | Plugin | Command |
 |---|---|
-| Impeccable | `/plugin marketplace add pbakaus/impeccable` then `/plugin install impeccable@impeccable` (or `npx impeccable install` in a project root, then `/impeccable init`) |
+| Impeccable (auto-enabled for this repo via `.claude/settings.json`) | `/plugin marketplace add pbakaus/impeccable` then `/plugin install impeccable@impeccable` (or `npx impeccable install` in a project root, then `/impeccable init`) |
 | Anthropic frontend-design | `/plugin install frontend-design@claude-plugins-official` (already copied by install.sh) |
 | Figma (skills + MCP) | `/plugin install figma@claude-plugins-official` |
 | Playwright MCP | `/plugin install playwright@claude-plugins-official` |

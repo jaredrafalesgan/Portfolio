@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "impeccable": {
+      "source": { "source": "github", "repo": "pbakaus/impeccable" }
+    },
+    "website-studio": {
+      "source": { "source": "github", "repo": "jaredrafalesgan/Portfolio" }
+    }
+  },
+  "enabledPlugins": {
+    "impeccable@impeccable": true,
+    "website-studio@website-studio": true
+  }
+}
